@@ -1,0 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Переносы в тексте</title>
+ </head>
+ <body>
+   <p>Нам тяжело порой бывает,<br>
+   Когда душа трещит по швам,<br>
+   Толь от любви или от боли,<br>
+   И всё хотим переменить.</p>
+   <p><i>Ф. А. Власов.</i></p>
+ </body>
+</html>
