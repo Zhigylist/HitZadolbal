@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+  "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Сайт ремонта ПК</title>
+  <link rel="stylesheet" href="assest/styles.css">
+
+ </head>
+ <body>
+     <header>
+         <div id="demo">Hello</div>
+         <div class="one_element">
+             Do you know?
+         </div>
+         <div class="dropdown">
+            <button class="dropbth">ZETF CW</button>
+            <div class="dropdown-content">
+                <a href="https://www.youtube.com/">ZETF  О нас </a>
+                <a href="https://www.dns-shop.ru/">ZETF  Запчасти</a>
+                <a href="https://vk.com/zhigylist2106">ZETF  Мастер </a>
+            </div>
+        </div>
+        <div>
+            <script>
+                document.getElementById("demo").style.fontSize = "50px";
+                document.getElementById("demo").style.color = "black";
+                document.getElementById("demo").style.backgroundColor = "purple";
+                let counter = 0;
+                setInterval (() => {
+                    document.getElementById("demo").innerHTML = "The Time: ${counter}";
+                    counter += 1;
+                }, 1000)
+            </script>
+        </div>
+     </header>
+     <style>
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #727070;
+            min-width: px;
+            box-shadow: 10px 5px 5px 1px rgb(25, 0, 255);
+            padding: 10px 50px;
+            z-index: 5;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        </style>
+        
+        <div class="dropdown">
+          <span>Наведи мышь!</span>
+          <div class="dropdown-content">
+            <p>Привет, введи число в прямоугольник внизу!</p>
+          </div>
+        </div>
+ </body>
