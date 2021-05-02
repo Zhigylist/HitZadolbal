@@ -1,5 +1,5 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
-  "http://www.w3.org/TR/html4/strict.dtd">
+ "http://www.w3.org/TR/html4/strict.dtd">
 <html>
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -11,7 +11,7 @@
      <header>
          <div id="demo">Hello</div>
          <div class="one_element">
-             Do you know?
+             Kak zhe ******/\
          </div>
          <div class="dropdown">
             <button class="dropbth">ZETF CW</button>
@@ -20,17 +20,27 @@
                 <a href="https://www.dns-shop.ru/">ZETF  Запчасти</a>
                 <a href="https://vk.com/zhigylist2106">ZETF  Мастер </a>
             </div>
-        </div>
-        <div>
+        </div> <p id="rocket"></p>
             <script>
+                document.getElementById("demo").innerHTML = "Здрасте!";
                 document.getElementById("demo").style.fontSize = "50px";
                 document.getElementById("demo").style.color = "black";
                 document.getElementById("demo").style.backgroundColor = "purple";
-                let counter = 0;
-                setInterval (() => {
-                    document.getElementById("demo").innerHTML = "The Time: ${counter}";
-                    counter += 1;
-                }, 1000)
+                let timer; 
+                
+let x =10; 
+countdown(); 
+function countdown(){  
+  document.getElementById('rocket').innerHTML = x;
+  x--; 
+  if (x<0){
+    clearTimeout(timer); 
+  
+  }
+  else {
+    timer = setTimeout(countdown, 1000);
+  }
+}
             </script>
         </div>
      </header>
@@ -59,6 +69,7 @@
           <span>Наведи мышь!</span>
           <div class="dropdown-content">
             <p>Привет, введи число в прямоугольник внизу!</p>
+            <input type="number">
           </div>
         </div>
  </body>
