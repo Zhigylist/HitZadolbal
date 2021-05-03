@@ -9,38 +9,24 @@
  </head>
  <body>
      <header>
-         <div id="demo">Hello</div>
+         <div id="demo">>Hello</div>
          <div class="one_element">
-             Kak zhe ******/\
+ Kak zhe ******/\
          </div>
          <div class="dropdown">
             <button class="dropbth">ZETF CW</button>
             <div class="dropdown-content">
-                <a href="https://www.youtube.com/">ZETF  О нас </a>
-                <a href="https://www.dns-shop.ru/">ZETF  Запчасти</a>
-                <a href="https://vk.com/zhigylist2106">ZETF  Мастер </a>
+                <a href="https://www.youtube.com/">ZETF О нас </a>
+                <a href="https://www.dns-shop.ru/">ZETF Запчасти</a>
+                <a href="https://vk.com/zhigylist2106">ZETF Мастер </a>
             </div>
         </div> <p id="rocket"></p>
             <script>
-                document.getElementById("demo").innerHTML = "Здрасте!";
+                document.getElementById("demo").innerHTML = "Здравствуйте!";
                 document.getElementById("demo").style.fontSize = "50px";
                 document.getElementById("demo").style.color = "black";
                 document.getElementById("demo").style.backgroundColor = "purple";
-                let timer; 
                 
-let x =10; 
-countdown(); 
-function countdown(){  
-  document.getElementById('rocket').innerHTML = x;
-  x--; 
-  if (x<0){
-    clearTimeout(timer); 
-  
-  }
-  else {
-    timer = setTimeout(countdown, 1000);
-  }
-}
             </script>
         </div>
      </header>
@@ -50,7 +36,7 @@ function countdown(){
             display: inline-block;
         }
         
-        .dropdown-content {
+ .dropdown-content {
             display: none;
             position: absolute;
             background-color: #727070;
@@ -60,7 +46,7 @@ function countdown(){
             z-index: 5;
         }
         
-        .dropdown:hover .dropdown-content {
+ .dropdown:hover .dropdown-content {
             display: block;
         }
         </style>
@@ -68,8 +54,23 @@ function countdown(){
         <div class="dropdown">
           <span>Наведи мышь!</span>
           <div class="dropdown-content">
-            <p>Привет, введи число в прямоугольник внизу!</p>
-            <input type="number">
+            <p>Привет, ты ввёл число?</p>
+            <p id="rocket"></p>
+            <script> 
+            input = Number(prompt('Текст'));;  
+            countdown(); 
+            function countdown(){  
+              document.getElementById('rocket').innerHTML = input;
+              input--; 
+              if (input<0){
+                clearTimeout(timer); 
+              
+              }
+              else {
+                timer = setTimeout(countdown, 1000);
+              }
+            }
+            </script>
           </div>
         </div>
  </body>
