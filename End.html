@@ -20,7 +20,7 @@
                 <a href="https://www.dns-shop.ru/">ZETF Запчасти</a>
                 <a href="https://vk.com/zhigylist2106">ZETF Мастер </a>
             </div>
-        </div> <p id="rocket"></p>
+        
             <script>
                 document.getElementById("demo").innerHTML = "Здравствуйте!";
                 document.getElementById("demo").style.fontSize = "50px";
@@ -40,7 +40,7 @@
             display: none;
             position: absolute;
             background-color: #727070;
-            min-width: px;
+            min-width: 5px;
             box-shadow: 10px 5px 5px 1px rgb(25, 0, 255);
             padding: 10px 50px;
             z-index: 5;
@@ -63,8 +63,7 @@
               document.getElementById('rocket').innerHTML = input;
               input--; 
               if (input<0){
-                clearTimeout(timer); 
-              
+                clearTimeout(timer);               
               }
               else {
                 timer = setTimeout(countdown, 1000);
