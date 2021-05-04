@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Сайт numder 1 v.beta</title>
+  </header>
+
+<body>
+ <div class="dropdown-content">
+    <p>Привет, ты ввёл число?</p>
+    <p id="rocket"></p>
+    <script>
+      input = Number(prompt("Вводите только цифры"));
+      countdown();
+      function countdown() {
+        document.getElementById("rocket").innerHTML = input;
+        input--;
+        if (input < 0) {
+          clearTimeout(timer);
+        } else {
+          timer = setTimeout(countdown, 1000);
+        }
+      }
+    </script>
+  </div>
+  </body> 
