@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Сайт numder 1 v.3.0</title>
+    <script src="myscript.js" type="text/javascript"></script>
     <style>
       .dropbtn {
         background-color: #000000;
@@ -62,36 +63,21 @@
       size="12"
     />
 
-    <script>
-      input = Number(prompt("Только цифры"));
-      countdown(input);
-      function countdown(input) {
-        document.getElementById(Number).innerHTML = input;
-        input--;
-        if (input < 0) {
-          clearTimeout(timer);
-        } else {
-          timer = setTimeout(countdown, 1000);
-        }
-      }
+<form method="post" class="new_form">
+  <input
+    type="text"
+    name="name"
+    title="Введите ваше имя"
+    placeholder="Имя"
+    required
+  />
 
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
+  <input type="email" name="email" placeholder="Почта" required />
 
-      window.onclick = function (event) {
-        if (!event.target.matches(".dropbtn")) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains("show")) {
-              openDropdown.classList.remove("show");
-            }
-          }
-        }
-      };
-    </script>
+  <textarea name="mess" placeholder="Сообщение" required></textarea>
+
+  <input type="submit" name="submit" value="Отправить" />
+</form>
   </header>
   <body>
     <h2></h2>
@@ -106,4 +92,5 @@
       </div>
     </div>
   </body>
+
 </html>
